@@ -1,0 +1,25 @@
+@font-face {
+	font-family:"PTsans-Bold";
+	src:url("../fonts/PTsans-Bold.ttf");
+}
+
+@font-face {
+	font-family:"PTsans-Regular";
+	src:url("../fonts/PTsans-Regular.ttf");
+}
+
+@font-face {
+	font-family:"Nexa-Bold";
+	src:url("../fonts/Nexa-Bold.otf");
+}
+
+@font-face {
+	font-family:"Nexa-Light";
+	src:url("../fonts/Nexa-Light.otf");
+}
+
+@font-face {
+	font-family:"Helvetica";
+	src:url("../fonts/Helvetica.otf");
+}
+

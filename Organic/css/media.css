@@ -1,0 +1,201 @@
+@media only screen and (max-width : 1200px) {
+ 	
+
+ 	.banner .logo{
+ 		left: auto;
+ 		right: 25px;
+ 	}
+}
+
+@media only screen and (max-width : 992px) {
+	
+	.banner__content{
+		width: 100%;
+		text-align: center;
+	}
+
+	.banner__description{
+		width: 70%;
+		margin: 0 auto;
+	}
+
+		.banner{
+ 		min-height: 800px;
+ 		padding-bottom: 75px;
+ 	}
+
+ 	.footer__content{
+ 		flex-wrap: wrap;
+ 	}
+
+}
+
+@media only screen and (max-width : 800px) {
+	
+	.banner .wrapper{
+		
+	}
+
+	header{
+		height: 150%;
+		// z-index:1;
+		// background-color: rgba(254, 153, 42,0.6);
+		// margin-top: 0;
+		// left: 0;
+		// position: relative;
+	}
+	
+	header nav{
+		margin-top: 75px;
+		display: none;
+		margin-left: -5px;
+	}
+	.visible{
+		display: block;
+	}
+
+	header nav ul{
+		display: block;
+		background-color: rgba(254, 153, 42,0.6);
+	}
+
+	header nav ul li > ul{
+		position: static;
+	}
+
+
+	header nav ul li a{
+		font-size: 30px;
+	}
+
+	header nav ul li {
+		margin-right: 0;
+	}
+
+	.banner .wrapper{
+		padding-top: 300px;
+	}
+
+	header .slide-menu{
+		display: flex;
+		flex-direction: column;
+		height: 30px;
+		justify-content:flex-start;
+		position: absolute;
+		top: 20px;
+		cursor:pointer;
+	}
+	
+	.banner__content h1{
+		font-size: 42px;
+	}
+
+	.wrapper{
+		width: 96%;
+		margin: 0 auto;
+	}
+
+		.banner__description{
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	.advantages__right{
+		width: 50%;
+		padding-left: 10px;
+	}
+
+	.advantages__quotes{
+		width: 50%;
+	}
+
+	.quotes .quote span{
+		margin:0 10px;
+
+	}
+
+	.footer__content ul{
+		width: 33%;
+		margin-bottom: 20px; 
+		text-align: center;
+	}
+
+	.info {
+    margin-right: 0;
+    width: 33%;
+	}
+
+	.info ul {
+		width: 100%;
+	}
+
+	
+
+	
+
+
+}
+
+@media only screen and (max-width : 670px) {
+	.advantages .wrapper{
+		flex-wrap:wrap;
+	}
+
+	.advantages__quotes{
+		width: 100%;
+	}
+
+	.advantages__right{
+		padding: 0;
+		width: 100%;
+		border-left: none;
+	}
+
+	.quotes .quote {
+    margin-bottom: 0;
+	}
+
+	.footer__content ul{
+		width: 50%;
+	}
+
+	.info {
+   		 width: 50%;
+	}
+
+	.info ul {
+		width: 100%;
+	}
+
+	.footer__content{
+		padding-bottom: 50px;
+	}
+
+		.quotes .quote span{
+	
+		padding: 32px 20px 24px 20px;
+	}
+
+	.advantages{
+		background-color: white;
+	    clip-path: none;
+	    -webkit-clip-path:none;
+	}
+
+}
+
+@media only screen and (max-width : 480px) {
+	
+
+	// .footer__content ul{
+	// 	width: 100%;
+	// }
+
+	// .info {
+ //    width: 100%;
+	// }
+
+	// .info ul {
+	// 	width: 100%;
+	// }
+}

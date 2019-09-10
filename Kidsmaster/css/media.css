@@ -1,0 +1,173 @@
+@media only screen and (max-width : 1200px) {
+ 	
+	.articles__flexwrap{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.articles__flexwrap article{
+		margin: 10px;
+		margin-bottom: 20px;
+	}
+
+	.articles__content h2{
+		text-align: center;
+	}
+
+	.article__image img{
+		margin: 0 auto;
+	}
+
+	.article__date{
+		text-align: center;
+	}
+
+	.advantages__content{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.advantage{
+		max-width: 50%;
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	.advantage__text{
+		align-self:center;
+		width: 100%;
+		text-align: center;
+	}
+
+	.advantage__iocn {
+		align-self: center;
+	}
+
+	.advantage__title{
+		text-align: center;
+	}
+
+}
+
+@media only screen and (max-width : 992px) {
+	
+	.facilities__content{
+		flex-wrap: wrap;
+	}
+
+	 .facilities__description{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	 .facilities__items{
+	 	justify-content: center;
+		max-width: 100%;
+	}
+
+	.facilities__description img{
+		margin: 0 auto;
+	}
+	
+	.facilities__item{
+		margin: 0 10px 20px 10px;
+	}
+
+	.teachers__list{
+		padding: 20px;
+	}
+
+	.kidzmaster__flexwrap{
+		flex-wrap: wrap;
+	}
+
+	.kidzmaster__content{
+		width: 100%;
+	}
+
+	.kidzmaster__image{
+		margin: 0 auto;
+	}
+
+		 .course{
+		width: 100%;
+	}
+
+	// .course__image{
+	// 	width: 100%;
+	// }
+
+
+}
+
+@media only screen and (max-width : 768px) {
+	
+	.teachers__description{
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.teachers__content h2{
+		text-align: center;
+	}
+
+	.advantage{
+		max-width: 100%;
+		width: 100%;
+		
+	}
+
+	.header__nav-bottom ul{
+		flex-wrap: wrap;
+	}
+
+
+
+}
+
+@media only screen and (max-width : 640px) {
+
+	.teachers__list{
+		justify-content: center;
+	}
+
+	.advantages__content{
+		padding: 40px;
+	}
+
+	.header__nav-top{
+		flex-wrap: wrap;
+	}
+	
+}
+
+@media only screen and (max-width : 480px) {
+	
+	.teachers__list{
+		padding: 0px;
+	}
+
+	.comments__slide{
+		overflow: hidden;
+	}
+
+	.comments__image::after{
+		background-size: 60%;
+    	top: -85%;
+    	left: -98%;
+	}
+
+	.comments__image{
+		width: 140px;
+		height: 140px;
+	}
+
+	.advantages__content{
+		padding: 20px;
+	}
+
+	.advantage{
+		margin-bottom: 40px;
+	}
+
+}

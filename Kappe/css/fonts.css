@@ -1,0 +1,53 @@
+/* poppins-regular - latin */
+// @font-face {
+//   font-family: 'Poppins';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('../fonts/poppins-v4-latin-regular.eot'); /* IE9 Compat Modes */
+//   src: local('Poppins Regular'), local('Poppins-Regular'),
+//        url('../fonts/poppins-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//        url('../fonts/poppins-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+//        url('../fonts/poppins-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+//        url('../fonts/poppins-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+//        url('../fonts/poppins-v4-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+// }
+
+
+@font-face { 
+  font-family: 'Roboto-Light'; 
+  src: url('../fonts/Roboto/Roboto-Light.woff2') format('woff2'), 
+       url('../fonts/Roboto/Roboto-Light.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'Roboto-Thin'; 
+  src: url('../fonts/Roboto/Roboto-Thin.woff2') format('woff2'), 
+       url('../fonts/Roboto/Roboto-Thin.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'Soho-Light'; 
+  src: url('../fonts/SohoGothic/SohoGothicPro-Light.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'Roboto-Italic'; 
+  src: url('../fonts/Roboto/Roboto-Italic.woff2') format('woff2'), 
+       url('../fonts/Roboto/Roboto-Italic.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'Roboto-Bold'; 
+  src: url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2'), 
+       url('../fonts/Roboto/Roboto-Bold.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}

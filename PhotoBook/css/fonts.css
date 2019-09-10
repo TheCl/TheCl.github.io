@@ -1,0 +1,19 @@
+@font-face {
+	font-family:"AgoraBold";
+	src:url("../fonts/PFagorasanspro/pfagorasanspro-bold.ttf");
+}
+
+@font-face {
+	font-family:"AgoraThin";
+	src:url("../fonts/PFagorasanspro/pfagorasanspro-thin.ttf");
+}
+
+@font-face {
+	font-family:"AgoraRegular";
+	src:url("../fonts/PFagorasanspro/pfagorasanspro-reg.ttf");
+}
+
+@font-face {
+	font-family:"AgoraLight";
+	src:url("../fonts/PFagorasanspro/pfagorasanspro-light.ttf");
+}

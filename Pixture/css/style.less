@@ -1,0 +1,606 @@
+
+
+
+
+#hellopreloader_preload{
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-width: 100%;
+	background: #130326 
+	url(http://hello-site.ru//main/images/preloads/circles.svg) 
+	center center no-repeat;
+	background-size:400px;
+	overflow:hidden;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MontRegular";
+  font-size: 13px;
+  color: @pre-white;
+  background-color: @purple-color;
+ }
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style:none;
+}
+@purple-color:#130326;
+@pre-white:#d6d6d6;
+
+header{
+	background-color:@purple-color;
+}
+
+.wrapper{
+	max-width:1600px;
+	margin: 0 auto;
+	display: flex;
+	position:relative;
+	overflow:hidden;
+}
+
+.side{
+	background-color: @purple-color;
+	width: 65px;
+	flex-shrink: 0;
+	padding: 44px 0;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.slideMenu{
+	position: absolute;
+	background-color: @purple-color;
+	top:0;
+	right:0;
+	opacity: 0.9;
+	width: 100%;	
+	bottom: 0;	
+	left: 66px;
+	z-index:10;
+	display: none;
+
+	a{
+		color:white;
+		padding: 10px;
+		text-transform: uppercase;
+		font-size: 40px;
+		display: block;
+		width: 100%;
+		margin-bottom: -1px;
+		border:1px dotted white;
+		background-color: rgba(1,1,1,0.5);
+	}	
+}
+
+.january .side, .articles .side{
+	min-width: 65px;
+}
+
+.main__content{
+	background-color: @purple-color;
+	width: 100%;
+	background-image: url("../img/header_bg.png");
+	padding: 44px 52px 0 132px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	border-left:1px solid rgba(255,255,255,0.5);
+	border-bottom:1px solid rgba(255,255,255,0.5);
+}
+
+
+.content__letter{
+	text-align: right;
+}
+
+.side__comment{
+	text-transform: uppercase;
+	 transform: rotate(180deg);
+	 -webkit-transform: rotate(180deg); //Chrome, Safari
+	-moz-transform: rotate(180deg); //Firefox
+	-o-transform: rotate(180deg); //Opera
+	-ms-transform: rotate(180deg); //IE
+	 vertical-align: middle;
+	 padding-top: 100px;	
+	 position: relative;
+	 width: 100%;
+	 display: flex;
+	 justify-content:center;
+
+    &:before{
+    	content:"";
+    	width: 12px;
+    	height: 7px;
+    	background-image: url("../img/arrow_icon_down.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+		position: absolute;
+		top: 0;
+		left: center;
+		transform: rotate(180deg);
+    }
+
+  	span{
+  		writing-mode:vertical-rl;
+  		-webkit-writing-mode:vertical-rl;
+  		display: block;
+  		padding-bottom: 40px;
+
+  }
+
+  .white{
+  	color: #fff;
+	display: inline-block;
+	
+  }
+
+}
+
+.content__center{
+	max-width:1180px;
+	padding: 0 13% 0 0px;
+	padding-top: 275px;
+	position: relative;
+}
+
+.logo-header{
+	text-align: center;
+	margin-bottom: 205px;
+}
+
+#fancy_callback{
+	display: none;
+	min-width: 40%;
+	min-height: 50%;
+	background-color: @purple-color;
+	padding: 15px;
+	h2{
+		font-size: 30px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	input,textarea{
+		width: 75%;
+		padding: 15px 10px;
+		border-radius: 7px;
+		border:2px solid white;
+		margin: 10px auto;
+		display: block;
+		font-size: 20px;
+	}
+
+	.submit{
+		text-transform: uppercase;
+		background-color: #fff;
+		display: block;
+		border:none;
+		width: 45%;
+		margin: 30px auto;
+		padding: 10px;
+		font-size: 25px;
+		color:@purple-color;
+		border-radius: 7px;
+		cursor: pointer;
+	}
+}
+
+.content__description{
+	width: 44%;
+	margin-bottom: 80px;
+	position: relative;
+
+	h2{
+		font-size: 24px;
+		margin-bottom: 20px;
+		font-weight: bold;
+		color:white;
+	}
+
+	span{
+		line-height: 25px;
+		color:white;
+	}
+
+	.dots{
+		position: absolute;
+		right:0px;
+		top:0px;
+		padding: 5px;
+		margin: 0 0 10px 10px;
+
+		:hover img{
+			transform:rotate(180deg);
+			transition:2s ease;
+		}
+	}
+}
+
+.content__data{
+	position: absolute;
+	right:0;
+	bottom: 10%;
+	padding-right: 10px;
+	color:white;
+
+	:after{
+		content:"";
+		padding-left: 20px;
+		width: 7px;
+		height: 12px;
+		background-image: url("../img/arrow_icon_small.png");
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
+}
+
+// КОНЕЦ ХЕДЕРА КОНЕЦ ХЕДЕРА КОНЕЦ ХЕДЕРА
+
+.passion{
+	.main__content{
+	background-color: @purple-color;
+	width: 95.2%;
+	background-image: url("../img/passion_bg.png");
+	}
+	
+	.side{
+			background-image: url("../img/main_grad_bg.png");
+	}
+
+	.side__menu{
+		visibility:hidden;
+	}
+}
+
+.slider{
+
+	.wrapper{
+		background-image: url("../img/main_grad_bg.png");	
+		flex-direction:column;
+		position: relative;
+		border-top:1px solid rgba(255,255,255,0.5);
+		border-bottom:1px solid rgba(255,255,255,0.5);
+
+		// &::after{
+		// 	content:"";
+		// 	width: 24px;
+		// 	height: 42px;
+		// 	background-image: url("../img/arrow_icon_big.png");
+		// 	position:absolute;
+		// 	righ:6%;
+		// 	top:40%;
+			
+		// }
+
+		.slider__h2{
+			font-size: 18px;
+			text-transform: uppercase;
+			margin: 40px 0 40px 5%;
+		}
+
+	    .bx-wrapper{
+	    	background-color: @purple-color;
+	    	border:none;
+	    }
+	}
+
+	.card__img{
+		max-height: 204px;
+		position: relative;
+		z-index: 0;
+		overflow:hidden;
+
+		.likes{
+			color:#0c2539;
+			font-size: 12px;
+			position: absolute;
+			right:20px;
+			bottom:15px;
+			font-weight: bold;
+
+			&::before{
+				width: 10px;
+				height: 9px;
+				content:"";
+				padding-right: 15px;
+				background-image: url("../img/like_icon.png");
+				background-position: center center;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	&__card{
+		max-width:379px;
+		display: flex;
+		flex-direction:column;
+		position: relative;
+		overflow: hidden;
+		display:inline-block;
+		margin-right: 20px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+	    &::before {
+			content:"";
+			width: 39px;
+			height: 39px;
+			background-image: url("../img/4_Cutout.png");
+			background-repeat: no-repeat;
+			background-position: center center;
+			position: absolute;
+			top:184px;
+			left:-20px;
+			z-index:10;
+
+	    	}
+
+	    }
+	}
+
+	.card__description{
+		background-color: #fff;
+		padding: 42px 0px 0 40px;
+		margin-top: -2px;
+
+		h2{
+			color:#0c2539;
+			font-size: 25px;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		span{
+			margin-bottom: 53px;
+			display: block;
+			color:#677278;
+			line-height: 24px;
+			width: 90%;
+		}
+
+		.comments{
+			display: flex;
+			justify-content: space-between;
+			align-items:center;
+			border-top:1px solid #f5f5f5;
+
+	    	span{
+	    		margin-bottom: 0;
+	    		position: relative;
+	    		padding-left: 30px;
+	    		color:#0c2539;
+
+	    		&::before{
+	    			content:"";
+	    			width: 19px;
+	    			height: 17px;
+	    			background-image: url("../img/comment_icon.png");
+	    			background-repeat: no-repeat;
+	    			background-position: center center;
+	    			position: absolute;
+	    			left:0;
+	    			bottom:15%;
+	    		}
+	    	}
+
+	    	.dots{
+	    		background-color: #f5f5f5;
+	    		img{
+	    			padding: 30px;
+	    		}
+	    	}
+	}
+}
+
+.january{
+
+ 	.side{
+		background-image: url("../img/main_grad_bg.png");
+		justify-content: center;
+		width: 4.8%;
+		vertical-align: middle;
+	
+	.side__comment {
+		padding: 0;
+	}
+
+	.side__comment::before {
+		display: none;
+	}
+
+		span{
+			padding: 0;
+		}
+	}
+
+	.content__center{
+		padding-top: 0;
+	}
+
+	article{
+		margin-right: 20px;
+		line-height: 25px;
+
+		p{
+			margin-bottom: 30px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.article-1{
+		width: 44%;
+	}
+
+	.article-2{
+		width: 50%;	
+	}
+
+}
+
+.author {
+
+	.main__content{
+	background-color: @purple-color;
+	width: 100%;
+	background-image: url("../img/author_bg.png");
+	padding: 0;
+	padding:0 210px;
+	border-top:1px solid rgba(255,255,255,0.5);
+	border-bottom:1px solid rgba(255,255,255,0.5);
+	}
+
+	.content__center{
+	max-width:1180px;
+	padding-right: 0px;
+	position: relative;
+	padding-top: 225px;
+	display: flex;
+	justify-content: flex-end;
+	}
+
+	.author__content{
+		margin-bottom: 235px;
+		width: 33%;
+	}
+
+	.author__by{
+		font-size: 16px;
+		color:#fff;
+		margin-bottom: 20px;
+	}
+	
+	.author__name{
+		font-size: 40px;
+		color:white;
+		margin-bottom: 35px;
+	}
+
+	.authir__description{
+		line-height: 25px;
+	}
+}
+
+.articles{
+
+	&__content{
+		background-color: transparent;
+		background-image: url("../img/main_grad_bg.png");
+		padding: 0px 210px 82px 132px;
+		width:95.2%;
+	}
+
+	&__center{
+		display: flex;
+		justify-content: space-between;
+		padding-top: 105px;
+		flex-wrap:wrap;
+		align-content:center;
+	}
+
+	article{
+		margin-right: 20px;
+		width: 23%;
+
+		h3{
+			font-size: 24px;
+			color:white;
+			margin-bottom: 30px;
+		}
+		span{
+			line-height: 25px;
+		}
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+
+	.side{
+		background-image: url("../img/main_grad_bg.png");
+		justify-content: center;
+		width: 4.8%;
+		vertical-align: middle;	
+
+	.side__comment {
+		padding: 0;
+	}
+
+	.side__comment::before {
+		display: none;
+	}
+
+		span{
+			padding: 0;
+		}
+	}
+
+	.content__center{
+		padding-top: 0;
+	}
+}
+
+// НАЧАЛО ФУТЕРА НАЧАЛО ФУТЕРА НАЧАЛО ФУТЕРА 
+
+footer{
+
+	.wrapper{
+	background-color: #140328;
+	padding: 75px 210px 180px 210px;
+
+		.footer__center{
+			display: flex;
+			width:56%;
+			justify-content: space-between;
+
+		}
+		ul{
+			margin-right: 20px;
+			width:25%;
+			&:last-child{
+				margin-right: 0;
+			}
+			li{
+				margin-bottom: 22px;	
+			}
+		}
+
+		ul li:first-child{
+		font-size: 11px;
+		text-transform: uppercase;
+		color:#0d4363;
+		margin-bottom: 22px;	
+		}
+	}
+}
+
+.footer__about{
+	margin-right: 20px;
+	width:43%;
+	line-height: 24px;
+
+	h3{
+		font-size: 11px;
+		text-transform: uppercase;
+		color:#0d4363;
+		margin-bottom: 22px;	
+	}
+}

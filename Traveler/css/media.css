@@ -1,0 +1,222 @@
+@media only screen and (max-width : 1200px) {
+ 	
+	.desktop{
+		background-size: contain;
+	}
+
+	.desktop__content {
+    margin-top: 20%;
+	}
+
+	.employer{
+		text-align: center;	
+	}
+
+}
+
+@media only screen and (max-width : 992px) {
+
+	header{
+		margin-bottom: 0;
+		z-index:1000;
+	}
+
+	.header__top{
+		flex-wrap:wrap;
+		justify-content: space-around;
+		height: 100%;
+		margin-bottom: 0;
+	}
+
+	.logotype{
+		flex-grow:1;
+		align-self:center;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.header__functions{
+		margin-bottom: 50px;
+		width: 75%;
+	}
+
+	.header__bottom nav{
+		display: none;
+		position: absolute;
+		width: 100%;
+		top: 55px;
+		z-index:1000;
+		left: 0;
+	}
+
+	.header__bottom nav ul{
+		display: block;
+		width: 100%;
+	}
+
+	.header__bottom nav ul li a:hover{
+
+		 border-bottom: 5px solid #6017a3;
+		 color:#6017a3;
+		 transform:none;
+		 transition:none;
+	}
+
+	.mobile-menu{
+	display: block;
+	}
+
+	.articles__content{
+		flex-wrap: wrap;
+	}
+
+	.articles article{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.
+	.logotype-footer{
+		justify-content: flex-start;
+	}
+
+}
+
+@media only screen and (max-width : 850px) {
+
+	.header__functions{
+		margin-bottom: 50px;
+		width: 90%;
+	}
+
+	.advantages__content {
+		flex-wrap: wrap;
+	}
+
+	.advanatage{
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: center;
+		margin-right: 0;
+	}
+	
+	.advanatage::after{
+		display: none;
+	}
+
+	.desktop__content {
+    margin-top: 30%;
+	}
+
+	.team__description h2:after,
+	.team__description h2:before{
+		width: 15%;	
+	}
+}
+
+@media only screen and (max-width : 768px) {
+
+	.header__functions{
+		flex-wrap:wrap;
+
+	}
+
+	.header__seacrh{
+		display: none;
+	}
+
+	.header__quicklinks a{
+		border-right: 0;
+	}
+
+	.footer__top{
+		flex-wrap: wrap;
+	}
+
+	.logotype-footer{
+		width: 100%;
+		margin-bottom: 20px;	
+	}
+
+	.footer__nav{
+		width: 100%;
+	}
+
+	.footer__nav ul{
+		justify-content: center;	
+	}
+
+	.footer__middle{
+		flex-wrap: wrap;
+		justify-content: center;	
+	}
+
+	.footer__info{
+		width: 100%;	
+		margin-bottom: 20px;	
+		text-align: center;	
+	}
+
+	.site-map{
+		display: flex;
+		justify-content: center;	
+	}
+
+	.footer__disclaimer{
+		text-align: center;	
+	}
+	
+}
+
+@media only screen and (max-width : 640px) {
+
+	.map{
+		padding-bottom: 50px;
+	}
+	
+	.desktop{
+	min-height: 400px;
+	}
+
+	.articles article{
+		padding: 30px;	
+	}
+
+	.advantages{
+		padding-bottom: 50px;	
+	}
+
+	.team__description h2:after,
+	.team__description h2:before{
+		display: none;	
+	}
+
+	.site-map ul{
+		flex-wrap: wrap;
+		justify-content: center;		
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	
+	.desktop__content h2{
+		font-size: 16px;
+	}
+
+	.footer__nav ul{
+		flex-wrap: wrap;	
+	}
+
+	.footer__top ul li:after{
+		display: none;	
+	}
+
+	.desktop {
+    min-height: 300px;
+	}
+
+	.footer__social{
+		justify-content: center;	
+	}
+
+}

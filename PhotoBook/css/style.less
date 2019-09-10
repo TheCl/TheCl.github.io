@@ -1,0 +1,688 @@
+// БАЗОВЫЕ СТИЛИ--------БАЗОВЫЕ СТИЛИ
+
+
+*{
+	margin: 0;
+	padding: 0;	
+	box-sizing: border-box;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+body{
+	font-size: 18px;
+	font-family: @AgoraLight;
+	color:black;
+	background-color: #fff;
+}
+
+.wrapper{
+	width: 98%;
+	max-width: 1080px;
+	margin: 0 auto;
+	// background-color: red;
+}
+
+img{
+	max-width:100%;
+}
+
+
+// КНОПКИ И ЗАГОЛОВКИ+++++++++
+
+.g-btn{
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: @AgoraThin;
+	color:@DarkGreyColor;
+	font-size: 26px;
+	padding: 18px 35px;
+	border-radius:15px;
+	border:1px solid black;
+}
+
+.g-btn-red{
+	background-color: @RedColor;
+	border:none;
+	color:white;
+}
+
+
+h2{
+	font-family: @AgoraThin;
+	font-size: 60px;
+	color:black;
+	font-weight: lighter;
+	text-align: center;
+	margin-bottom: 65px;
+
+}
+
+// --------------------------
+
+
+
+// ПЕРЕМЕННЫЕ-----------ПЕРЕМЕННЫЕ
+
+@AgoraBold : "AgoraBold", "Arial", sans-serif;
+@AgoraThin : "AgoraThin", "Arial", sans-serif;
+@AgoraRegular : "AgoraRegular", "Arial", sans-serif;
+@AgoraLight : "AgoraLight", "Arial", sans-serif;
+
+
+@RedColor: #e11a27;
+@YellowColor: #ffd200;
+@DarkGreyColor: #212121;
+@SkinColor: #f3f0e7;
+
+
+
+// НАЧАЛО ХЕДЕРА ++++++++++++++++++++++
+
+header{
+
+	.wrapper{
+		max-width:1200px;
+	}
+}
+
+
+.header__content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 30px;
+	// background-color: gold;
+}
+
+.header__left{
+	display: flex;
+	align-items: center;
+}
+
+
+.header__right{
+	display: flex;
+	align-items: center;
+}
+
+.header__nav{
+	margin-right: 65px;
+	position: relative;
+}
+
+
+.header__tel{
+	margin-right: 55px;
+
+	a{
+		display: inline-block;
+		padding: 10px 36px;
+		background-color: @YellowColor;
+		border-radius: 15px;
+
+		&:hover span{
+				border-bottom: 1px solid black ;
+			}
+	
+		span{
+			font-family: @AgoraLight;
+			color:black;
+			font-size: 16px;
+			border-bottom: 1px dashed black;
+		}
+
+		.header__login{
+
+			a{
+				display: block;
+			}
+		}
+	}
+}
+
+.hamburger__content{
+	cursor:pointer;
+	display: block;
+
+}
+
+.hamburger{
+	width: 30px;
+	height: 5px;
+	background-color: @YellowColor;
+	margin-bottom: 5px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.header__menu{
+	position: absolute;
+	top: 58px;
+	left: -44px;
+	background-color: #fff;
+	min-width: 124px;
+	min-height: 550px;
+	display: none;
+	flex-direction: column;
+	transition:1s all;
+	justify-content: space-around;
+
+	li{
+		margin-bottom: 5px;
+
+		&:hover a{
+			
+			border-bottom: 1px solid black;
+
+		}
+
+		a{
+			color:black;
+			text-align: center;
+			display: block;
+			font-size: 15px;
+			text-transform: uppercase;
+			font-family: @AgoraRegular;
+			border-bottom: 1px solid transparent;
+
+		}
+	}
+
+}
+
+.visible{
+	display: flex;
+}
+// КОНЕЦ ХЕДЕРА -----------------------
+
+
+// НАЧАЛО СЕКЦИИ БАННЕРА++++++++++++++++++++++
+
+
+.banner{
+	min-height: 550px;
+	background-image: url(../img/Banner-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: cover;
+}
+
+.banner__content{
+	text-align: center;
+	padding-top: 55px;
+
+	h1{
+		font-size: 60px;
+		color: black;
+		font-family: @AgoraThin;
+		text-transform: uppercase;
+		font-weight: lighter;
+		margin: 0;
+
+		&::first-letter{
+			font-size: 80px;
+		}
+	}
+
+}
+
+.h1__description{
+	font-size: 24px;
+	margin-bottom: 65px;
+	font-weight: bold;
+}
+
+// КОНЕЦ СЕКЦИИ БАННЕРА-----------------------
+
+
+
+// НАЧАЛО СЕКЦИИ ADVANTAGES ++++++++++++++++++++++
+
+.advantages__content{
+
+	padding: 55px 0 90px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.advantage{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+	background-color: #fff;
+
+	&:last-child .advantage__icon-wrap::after{
+		display: none;
+	}
+}
+
+.advantage__icon-wrap{
+	position: relative;
+	width: 140px;
+	height: 140px;
+	border:5px solid @YellowColor;
+	border-radius:50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+
+	&::after{
+		content:"";
+		background-image: url(../img/Dash-yellow.png);
+		background-repeat: no-repeat;
+		width: 131px;
+		position: absolute;
+		right:-104%;
+		height: 5px;
+	}
+}
+
+.advantage__title{
+
+	font-size: 24px;
+	max-width:50%;
+}
+
+// КОНЕЦ СЕКЦИИ ADVANTAGES-----------------------
+
+
+
+
+// НАЧАЛО СЕКЦИИ POSSIBILITIES++++++++++++++++++++++
+
+.possibilities{
+	background-color: @SkinColor;
+}
+
+.possibilities__content{
+	padding: 60px 0 75px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.possibility__flex-wrap{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 83px;
+}
+
+
+.possibility{
+	width: 25%;
+	text-align: center;
+
+	&:first-child .possibility__image{
+		background-image: url(../img/Social_icons.png);
+	}
+
+
+	&:last-child .possibility__image{
+		background-image: url(../img/templates.png);
+		background-size: 160%;
+		background-position:  center 10%;
+
+	}
+}
+
+.possibility__image{
+	width: 270px;
+	height: 270px;
+	border-radius:50%;
+	background-color: #fff;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.possibility__image{
+	background-image: url(../img/Kitten.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	z-index: 100;
+	margin-bottom: 23px;
+}
+
+.possibility__title{
+	font-size: 24px;
+	color:black;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+
+// КОНЕЦ СЕКЦИИ POSSIBILITIES-----------------------
+
+
+// НАЧАЛО СЕКЦИИ SOLUTIONS++++++++++++++++++++++
+
+.solutions__content{
+	padding: 70px 0 115px;
+}
+
+
+.solution{
+	background-color: @YellowColor;
+	width: 28.9%;
+	border-radius:7px;
+	padding: 45px 5px 10px 5px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	position: relative;
+}
+
+.solutions__flex-wrap{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.solution__title{
+	font-size: 36px;
+	font-family: @AgoraRegular;
+	text-align: center;
+	margin-bottom: 46px;
+}
+
+.solution__list{
+
+	padding: 20px 25px;
+	background-color: #fff;
+	min-height:200px;
+
+	ul{
+
+		li{
+			margin-bottom: 10px;
+			padding-left: 40px;
+			position: relative;
+			font-size: 18px;
+			font-family: @AgoraRegular;
+
+			&:before{
+				content:"";
+				width: 20px;
+				height: 20px;
+				background-image: url(../img/checked_icon.png);
+				background-repeat: no-repeat;
+				background-position: center center;
+				position: absolute;
+				left: 0;
+			
+			}
+		}
+	}
+}
+
+.solution__price{
+	background-color: #fff;
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 10px;
+}
+
+.solution__description{
+	font-size: 22px;
+	font-family: @AgoraThin;
+	text-align: center;
+}
+
+.sale__element{
+
+	border-bottom: 40px solid @YellowColor;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	height: 0;
+	padding-top: 10px;
+	width: 85%;
+	display: flex;
+	top: -40px;
+	color:@RedColor;
+	line-height: 37px;
+	font-family: @AgoraRegular;
+	font-weight: bold;
+	text-transform: uppercase;
+	left: 50%;
+	transform: translateX(-50%);
+	justify-content: center;
+	position: absolute;
+}
+
+// КОНЕЦ СЕКЦИИ SOLUTIONS-----------------------
+
+
+
+// НАЧАЛО СЕКЦИИ TESTIMONIALS++++++++++++++++++++++
+
+.testimonials{
+	background-color: @SkinColor;
+	background-image: url(../img/Book-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+
+	h2{
+		text-align: left;
+		margin-bottom: 55px;
+	}
+}
+
+.testimonials__content{
+	padding: 40px 0 40px;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.testimonial__user{
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.user__avatar{
+	width: 158px;
+	height: 158px;
+	border-radius:50%;
+	overflow: hidden;
+	margin-right: 27px;
+}
+
+.user__name{
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+
+.testimonial__text{
+
+	margin-bottom: 35px;
+
+	p{
+		margin-bottom: 15px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.testimonials__button{
+	align-self: flex-end;
+}
+
+.testimonial__slider-next{
+	padding-right: 35px;
+	position: relative;
+	text-align: right;
+	margin-bottom: 100px;
+	cursor: pointer;
+
+	&:after{
+		content:"";
+		width: 26px;
+		height: 3px;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transition:translateY(-50%);
+		background-image: url(../img/next-arrow_icon.png);
+		background-repeat: no-repeat;
+	}
+}
+
+.testimonial__slider-prev{
+	display: none;
+}
+
+// КОНЕЦ СЕКЦИИ TESTIMONIALS-----------------------
+
+
+
+// НАЧАЛО СЕКЦИИ INFO++++++++++++++++++++++
+
+.info__content{
+	padding: 90px 0 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.info__flex-wrap{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 75px;
+}
+
+.infoblock{
+	width: 28.9%;
+	background-color: @SkinColor;
+	border-radius:7px;
+	overflow: hidden;
+}
+
+.infoblock__title{
+	font-size: 36px;
+	text-align: center;
+	padding: 12px 0;
+	border-bottom: 5px solid white;
+	background-color: #ffd200;
+}
+
+.infoblock__text{
+	padding: 30px 35px 45px 35px;
+	font-family: @AgoraRegular;
+
+	p{
+		margin-bottom: 10px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+a.red{
+	display: block;
+	color:@RedColor;
+	font-family: @AgoraRegular;
+	font-weight: bold;
+}
+// КОНЕЦ СЕКЦИИ INFO-----------------------
+
+
+
+// НАЧАЛО ФУТЕРА ++++++++++++++++++++++
+
+footer{
+	background-color: @YellowColor;
+}
+
+.footer__content{
+	padding: 50px 0;
+}
+
+.coopyright{
+	text-align: center;
+	font-family: @AgoraRegular;
+	font-size: 14px;
+}
+
+.footer__flex-wrap{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.footer__links{
+	width: 57%;
+	display: flex;
+	justify-content: space-between;
+
+	ul{
+			min-width: 150px;
+			padding-top: 30px;
+			border-top: 1px solid black;
+
+			li{
+
+				margin-bottom: 12px;
+
+				a{
+					color:black;
+					font-family: @AgoraRegular;
+				}
+			}
+	}
+}
+
+.footer__social{
+
+	min-width: 150px;
+	padding-top: 30px;
+	border-top: 1px solid black;
+	display: flex;
+	margin-bottom: 50px;
+
+	.social{
+		width: 25px;
+		height: 25px;
+		background-image: url(../img/social_sprite.png);
+		background-repeat: no-repeat;
+		background-position: left center;
+		margin-right: 18px;
+		margin-bottom: 50px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+
+	.social-vk{
+		background-position: -44px 0;
+	}
+
+	.social-inst{
+		background-position: -84px 0;
+	}
+}
+// КОНЕЦ ФУТЕРА -----------------------
+
