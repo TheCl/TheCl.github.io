@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Slider</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<div class="shader" id="shader">
+		<span>Установите необходимое разрешение устройства (1024х768) и обновите страницу</span>
+	</div>
+	
+	<div class="sliders__content">
+
+		<div class="slider__vertical" id="slider">
+
+			<div class="slider__dots" id="dots">
+
+				<div class="slider__dot active__dot"></div>
+
+				<div class="slider__dot"></div>
+
+				<div class="slider__dot"></div>
+
+			</div>
+
+			<section class="slide__vertical-1 slide slide__active">
+
+				<div class="slide__content">
+
+					<div class="h1">Всегда ли цели терапии СД2 на поверхности?</div>
+
+					<div class="peaks">
+
+						<div class="peak peak-1">
+
+							<div class="peak__image">
+
+								<div class="peak__core"></div>
+
+							</div>
+
+							<div class="peak__text">
+									Цель по HbA1c
+							</div>
+
+						</div>
+
+						<div class="peak peak-2">
+
+							<div class="peak__image">
+
+								<div class="peak__core"></div>
+
+							</div>
+
+							<div class="peak__text">
+								Гипогликемия
+							</div>
+
+						</div>
+
+						<div class="peak peak-3">
+
+							<div class="peak__image">
+
+								<div class="peak__core"></div>
+
+							</div>
+							<div class="peak__text">
+									Осложнения СД
+							</div>
+
+						</div>
+
+						<div class="peak peak-4">
+
+							<div class="peak__image">
+
+								<div class="peak__core"></div>
+
+							</div>
+
+							<div class="peak__text">
+									СС риски
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="slider__button-down">
+					Листайте вниз
+				</div>
+
+			</section>
+
+			<section class="slide__vertical-2 slide">
+
+				<div class="slide__content">
+
+					<div class="h2">Основа терапии — патогенез СД2</div>
+
+				</div>
+
+			</section>
+
+			<section class="slide__vertical-3 slide__horizontal-3 slide">
+
+				<input type="range" min="1" max="100" value="100" id="toggle" class="slider__range"  ontouchmove="toggleSlider()" >
+
+				<div class="slider__years">
+
+					<div class="year">1988</div>
+					<div class="year">2009</div>
+					<div class="year">2016</div>
+
+				</div>
+
+				<div class="slider__horizontal" id="slider__horizontal">
+
+					<div class="slide__content">
+
+						<div class="h3">Звенья патогенеза СД2</div>
+	
+						<section class="scheme-3 scheme grid-container">
+	
+							<div class="intestine__cell cell cell-1">
+
+								<div class="cell__left">
+									<div class="cell__number">8</div>
+									<div class="cell__name">Микрофлора<br>кишечника</div>
+								</div>
+
+								<div class="cell__right">
+									<div class="cell__icon"></div>
+								</div>
+							</div>
+	
+							<div class="beta__cell cell cell-2">
+
+								<div class="cell__number">1
+									<div class="cell__name">β-клетки</div>
+								</div>
+
+								<div class="cell__icon">β</div>
+
+							</div>
+	
+							<div class="brain__cell cell cell-3">
+
+								<div class="cell__left">
+
+									<div class="cell__number">7</div>
+									<div class="cell__name">Головной мозг</div>
+
+								</div>
+
+								<div class="cell__right">
+
+									<div class="cell__icon"></div>
+
+								</div>
+								
+							</div>
+	
+							<div class="immunity__cell cell cell-4">
+
+								<div class="cell__left">
+
+									<div class="cell__number">9</div>
+									<div class="cell__name">Нарушение иммунной регуляции/воспаление</div>
+
+								</div>
+
+								<div class="cell_right">	
+
+									<div class="cell__icon"></div>
+
+								</div>
+
+							</div>
+	
+							<div class="incr__cell cell cell-5">
+
+								<div class="cell__number">2</div>
+								<div class="cell__name">↓ инкретинового эффекта</div>
+
+							</div>
+	
+							<div class="alfa__cell cell cell-6">
+
+								<div class="cell__number">3</div>
+								<div class="cell__name">Дефект α-клеток</div>
+
+							</div>
+	
+							<div class="insulin__cell cell cell-7">
+	
+								<div class="cell__title">Инсулинорезистентность</div>
+								<div class="insulin__content">
+
+									<div class=" liver__cell cell">
+
+										<div class="cell__left">
+											<div class="cell__icon"></div>
+										</div>
+
+										<div class="cell__right">
+											<div class="cell__name">Печень</div>
+											<div class="cell__number">6</div>
+										</div>
+
+									</div>
+
+									<div class="muscle__cell cell">
+
+										<div class="cell__left">
+											<div class="cell__icon"></div>
+										</div>
+
+										<div class="cell__right">
+											<div class="cell__name">Мышцы</div>
+											<div class="cell__number">5</div>
+										</div>
+
+									</div>
+
+									<div class="lipid__cell cell">
+
+										<div class="cell__left">
+											<div class="cell__icon"></div>
+										</div>
+
+										<div class="cell__right">
+											<div class="cell__name">Жировые клетки</div>
+											<div class="cell__number">4</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+	
+							<div class="stomach__cell cell cell-8">
+
+								<div class="cell__left">
+
+									<div class="cell__number">10</div>
+									<div class="cell__name">Желудок</div>
+								</div>
+
+								<div class="cell__right">
+
+									<div class="cell__icon"></div>
+
+								</div>
+
+							</div>
+	
+							<div class="glycemia__cell cell cell-9">
+								<div class="cell__name">Гипергликемия</div>
+							</div>
+	
+							<div class="kidney__cell cell cell-10">
+
+								<div class="cell__left">
+									<div class="cell__icon"></div>
+								</div>
+
+								<div class="cell__right">
+
+									<div class="cell__name">Почки</div>
+									<div class="cell__number">11</div>
+
+								</div>
+
+							</div>
+						</section>
+	
+					</div>
+					
+					<section class="slide__horizontal-2 slide">
+
+						<div class="slide__content">
+
+							<div class="h3">Смертельный октет</div>
+							
+							<div class="scheme-2 scheme grid-container">
+		
+								<div class="second__cell cell cell-2">
+
+									<div class="cell__name">Инкретиновый<br>эффект</div>
+									<div class="cell__icon">
+										<div class="cell__number">2</div>
+									</div>
+
+								</div>
+		
+								<div class="beta__cell cell cell-1" >
+
+									<div class="cell__number">1</div>
+									<div class="cell__name">β-клетки</div>
+									<div class="cell__icon">
+										β
+									</div>
+
+								</div>
+		
+								<div class="third__cell cell cell-3">
+
+										<div class="cell__icon">
+											<div class="cell__number">3</div>
+										</div>
+
+									<div class="cell__name">Дефект <br> α-клеток</div>
+
+								</div>
+		
+								<div class="kidney__cell cell cell-8">
+
+									<div class="cell__number">8</div>
+									<div class="cell__name">Почки</div>
+									<div class="cell__icon"></div>
+
+								</div>
+		
+								<div class="scheme__square cell-9">
+									<span>Гипергликемия</span>
+								</div>
+		
+								<div class="lipid__cell cell cell-4">
+
+									<div class="cell__number">4</div>
+									<div class="cell__name">Жировые клетки</div>
+									<div class="cell__icon"></div>
+
+								</div>
+		
+								<div class="brain__cell cell cell-7">
+
+									<div class="cell__icon"></div>
+									<div class="cell__number">7</div>
+									<div class="cell__name">Головной <br> мозг</div>
+
+								</div>
+		
+								<div class="liver__cell cell cell-6">
+
+									<div class="cell__icon"></div>
+									<div class="cell__number">6</div>
+									<div class="cell__name">Печень</div>
+
+								</div>
+		
+								<div class="muscle__cell cell cell-5">
+
+									<div class="cell__icon"></div>
+									<div class="cell__number">5</div>
+									<div class="cell__name">Мышцы</div>
+									
+								</div>
+								
+							</div>
+						</div>
+
+					</section>
+					
+					<section class="slide__horizontal-1 slide">
+
+						<div class="slide__content">
+
+							<div class="h3">Звенья патогенеза СД2</div>
+
+							<div class="scheme-1 scheme">
+		
+								<div class="scheme__top">
+		
+									<div class="beta__cell cell">
+
+										<div class="cell__number">1</div>
+										<div class="cell__name">β-клетки</div>
+										<div class="cell__icon">
+											β
+										</div>
+
+									</div>
+		
+								</div>
+		
+								<div class="scheme__bottom">
+		
+									<div class="muscle__cell cell">
+
+										<div class="cell__number">2</div>
+										<div class="cell__name">Мышцы</div>
+										<div class="cell__icon"></div>
+
+									</div>
+		
+									<div class="scheme__square">
+										<span>Гипергликемия</span>
+									</div>
+		
+									<div class="liver__cell cell">
+
+										<div class="cell__number">3</div>
+										<div class="cell__name">Печень</div>
+										<div class="cell__icon"></div>
+
+									</div>
+		
+								</div>
+								
+							</div>
+							
+						</div>
+
+					</section>
+					
+				</div>	
+
+			</section>
+
+		</div>
+	</div>
+	
+	<script src="js/slider.js"></script>
+
+</body>
+</html>

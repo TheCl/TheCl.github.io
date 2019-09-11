@@ -1,0 +1,27 @@
+// font-weight helper:
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
+
+
+@include font('lato-regular', normal, 400, '../fonts/Lato/Lato-Regular.woff2')
+@include font('lato-light', normal, 200, '../fonts/LatoLight/Lato-Light.woff2')
+@include font('lato-bold', normal, 700, '../fonts/LatoBold/Lato-Bold.woff2')
+@include font('lato-medium', normal, 500, '../fonts/LatoMedium/Lato-Medium.woff2')
+@include font('lato-semibold', normal, 600, '../fonts/LatoSemiBold/Lato-Semibold.woff2')
+
+@include font('ghotampro-regular', normal, 400, '../fonts/GhotamPro/GothamPro.woff2')
+@include font('ghotampro-light', normal, 200, '../fonts/GhotamProLight/GothamPro-Light.woff2')
+@include font('ghotampro-medium', normal,500, '../fonts/GhotamProMedium/GothamPro-Medium.woff2')
